@@ -42,7 +42,7 @@ const App: React.FC = () => {
   };
 
   return (
-    <Router>
+    <Router basename="/my-resume">
       <div className="background-shapes">
         <div className="shape"></div>
         <div className="shape"></div>
