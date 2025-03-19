@@ -1,0 +1,201 @@
+.skills-section {
+  width: 100%;
+  padding: 2rem;
+  margin-bottom: 4rem;
+}
+
+.skills-title {
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  background: var(--gradient-skill-card);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.skill-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 15px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  display: block;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.07); /* Lighter background on hover */
+  border-color: rgba(255, 255, 255, 0.2); /* Slightly more visible border */
+}
+
+/* Special handling for see-more-card hover */
+.see-more-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.274);
+    border-color: rgba(255, 255, 255, 0.03);
+  }
+  
+.see-more-card {
+  background: linear-gradient(135deg, 
+    rgba(var(--primary-rgb), 0.1), 
+    rgba(var(--primary-blue-rgb), 0.2)
+  );
+  border: 1px solid rgba(var(--primary-rgb), 0.2);
+}
+/* Add this to your existing CSS */
+.see-more-card .skill-icon {
+  font-size: 3rem;
+  font-weight: 200;
+  background: linear-gradient(45deg, var(--primary-red), var(--primary-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: rotate(0deg);
+  transition: transform 0.3s ease;
+}
+
+.see-more-card:hover .skill-icon {
+  transform: rotate(90deg);
+}
+.see-more-card:hover {
+  border-color: rgba(var(--primary-rgb), 0.4);
+  box-shadow: 0 8px 32px rgba(var(--primary-rgb), 0.15);
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.skill-card p {
+  color: var(--text-color);
+  opacity: 0.8;
+  margin: 0;
+}
+@media (max-width: 768px) {
+  .skills-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1rem;
+    padding: 1rem 0.5rem;
+    margin: 0 -1rem;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;  /* Firefox */
+    -ms-overflow-style: none;  /* IE and Edge */
+  }
+  
+  .skills-grid::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari and Opera */
+  }
+
+  .skill-card {
+    flex: 0 0 280px;
+    scroll-snap-align: center;
+    margin-right: 0.5rem;
+  }
+
+  .see-more-card {
+    display: none;
+  }
+
+  .carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+  }
+
+  .dot.active {
+    background: var(--gradient-skill-card);
+    transform: scale(1.2);
+  }
+
+  .see-more-button {
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .see-more-button:hover {
+    background: var(--gradient-skill-card);
+    color: var(--bg-color);
+    border: none;
+    transform: translateY(-2px);
+  }
+}
+.skill-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.skill-icon {
+  font-size: 2.5rem;
+}
+
+.skill-card h3 {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  margin: 0;
+}
+
+.skill-card p {
+  color: var(--text-color);
+  opacity: 0.8;
+  margin: 0;
+}

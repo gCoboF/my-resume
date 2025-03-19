@@ -1,0 +1,103 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  /* Add margin-top to adjust vertical position */
+  margin-top: -4rem;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #666;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.role {
+  font-size: 2.5rem; /* Increased size */
+  color: #007bff; /* Highlight color - you can change this */
+  font-weight: 600;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.3); /* Add subtle glow effect */
+}
+
+.cursor {
+  color: #007bff; /* Match the text color */
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.cta-button {
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+@media screen and (max-width: 480px) {
+  .hero {
+    margin-top: -6rem;
+  }
+  .hero-content {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .role {
+    font-size: 1.5rem;  /* Reduced from 1.8rem */
+    height: auto;
+    min-height: 2rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+  .cursor {
+    font-size: 1.5rem;  /* Match the new role font size */
+  }
+  .title {
+    font-size: 2.8rem;
+  }
+  .subtitle {
+    font-size: 1.6rem;
+  }
+}

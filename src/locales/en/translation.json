@@ -1,0 +1,36 @@
+{
+  "header": {
+    "about": "About Me",
+    "projects": "Projects",
+    "dev_projects": "Development Projects",
+    "design_projects": "Design Projects",
+    "resume": "Resume"
+  },
+  "aboutMe": {
+    "title": "About Me",
+    "intro": "Hello! I'm a passionate developer and designer with a focus on creating intuitive and engaging user experiences.",
+    "experience": "With several years of experience in the industry, I've worked on a variety of projects ranging from web applications to mobile apps and design systems.",
+    "skills": "My skill set includes front-end development, UI/UX design, and a strong understanding of user-centered design principles.",
+    "background": {
+      "title": "Background",
+      "content": "I started my journey in technology with a curiosity about how digital products are built. Over the years, I've developed a deep appreciation for the intersection of design and development, where functionality meets aesthetics."
+    },
+    "education": {
+      "title": "Education",
+      "degree1": {
+        "name": "Bachelor's Degree in Computer Science",
+        "institution": "University Name",
+        "period": "2015-2019"
+      },
+      "degree2": {
+        "name": "Certificate in UI/UX Design",
+        "institution": "Design Institute",
+        "period": "2020"
+      }
+    },
+    "interests": {
+      "title": "Interests & Hobbies",
+      "content": "Outside of work, I enjoy photography, hiking, and exploring new technologies. I'm also an avid reader and enjoy participating in design and development communities."
+    }
+  }
+}

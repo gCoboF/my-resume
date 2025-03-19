@@ -1,0 +1,136 @@
+.about {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;  /* Reduced padding for mobile */
+  position: relative;
+}
+
+.about-intro {
+  max-width: 800px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.about-title {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #c77dff, #9d4edd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about-title::before {
+  content: '✨';
+  font-size: 2.5rem;
+  -webkit-text-fill-color: initial;
+  animation: sparkle 1.5s ease-in-out infinite;
+  order: -1;
+}
+
+.about-brief {
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: var(--text-color);
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  letter-spacing: 0.5px;
+}
+
+.know-more-btn {
+  padding: 0.9rem 2.2rem;
+  font-size: 1rem;
+  background: transparent;
+  border: 1px solid rgba(199, 125, 255, 0.3);
+  color: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 10rem;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.know-more-btn:hover {
+  background: linear-gradient(45deg, #c77dff, #9d4edd);
+  border-color: transparent;
+  color: var(--bg-color);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(199, 125, 255, 0.2);
+
+}
+
+.know-more-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(199, 125, 255, 0.3);
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.7; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.1); }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1.5rem;
+    justify-content: flex-start;
+  }
+  
+  .about-intro {
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-brief {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    padding: 0 0.5rem;
+  }
+  .know-more-btn {
+    padding: 0.8rem 2rem;
+    margin-bottom: 5rem;
+    width: auto;
+    min-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 2rem 1rem;
+  }
+  
+  .about-title {
+    font-size: 2.2rem;
+  }
+  
+  .about-brief {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  .about-title::before {
+    font-size: 2rem;
+  }
+  .know-more-btn {
+    padding: 0.7rem 1.8rem;
+    font-size: 0.95rem;
+    margin-bottom: 4rem;
+  }
+}
