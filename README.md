@@ -23,7 +23,9 @@ O projeto foi desenvolvido seguindo o conceito Mobile First, garantindo uma expe
 - Smartphones (até 768px)
 - Tablets (768px - 1024px)
 - Desktop (1024px+)
-  
+
+  ![image](https://github.com/user-attachments/assets/a7512d2a-8a29-4161-84bf-12dc3f0231e8)
+
 
 ## 🛠 Tecnologias Utilizadas
 
