@@ -18,7 +18,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -57,7 +57,7 @@
   );
   border: 1px solid rgba(var(--primary-rgb), 0.2);
 }
-/* Add this to your existing CSS */
+
 .see-more-card .skill-icon {
   font-size: 3rem;
   font-weight: 200;
@@ -107,7 +107,7 @@
 }
 @media (max-width: 768px) {
   .skills-grid {
-    display: flex;
+    display: flex !important; 
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     gap: 1rem;
@@ -115,18 +115,16 @@
     margin: 0 -1rem;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;  /* Firefox */
-    -ms-overflow-style: none;  /* IE and Edge */
-  }
-  
-  .skills-grid::-webkit-scrollbar {
-    display: none;  /* Chrome, Safari and Opera */
+    scrollbar-width: none;
+    -ms-overflow-style: none;
   }
 
   .skill-card {
-    flex: 0 0 280px;
+    flex: 0 0 280px; /* Mantém o tamanho fixo dos cards */
     scroll-snap-align: center;
     margin-right: 0.5rem;
+    height: auto; 
+    min-height: 200px; 
   }
 
   .see-more-card {
