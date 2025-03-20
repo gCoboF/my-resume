@@ -98,7 +98,7 @@ const Resume: React.FC = () => {
         <section className="resume-section skills-section">
           <div className="container">
             <h2 className="section-title">{t('resume.skills.title')}</h2>
-            <div className="skills-grid">
+            <div className="skill-grid">
               {skills.map(skill => (
                 <div key={skill.id} className="skill-item">
                   <div className="skill-info">
