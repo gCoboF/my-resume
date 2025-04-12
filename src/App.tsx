@@ -59,6 +59,10 @@ const App: React.FC = () => {
         <Route path="/resume" element={<Resume />} />
       </Routes>
 
+      <div className="footer-bottom">
+        <p className="copyright">© {new Date().getFullYear()} Gabriel Cobo</p>
+      </div>
+
       <button 
         className={`scroll-to-top ${showScrollButton ? 'visible' : ''}`}
         onClick={scrollToTop}

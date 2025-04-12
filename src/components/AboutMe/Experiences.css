@@ -1,0 +1,517 @@
+.experience-section {
+  width: 100%;
+  padding: 2rem;
+  margin: 4rem auto;
+  max-width: 1300px;
+}
+
+.experience-container {
+  position: relative;
+  background: rgba(30, 30, 40, 0.6); 
+  border-radius: 15px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Removed hover effects */
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.experience-logo {
+  width: 100px;
+  background-color: #FFF;
+  height: 100px; 
+  object-fit: contain; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  padding: 10px; 
+}
+
+.experience-logo:hover {
+  transform: scale(1.05);
+}
+
+.experience-title h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  background: var(--gradient-skill-card);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-title h3 {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.experience-description {
+  text-align: justify;
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.experience-description p {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.tech-stack h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.95;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-tag {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px; /* Less rounded corners for more professional look */
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.1); /* Subtle background */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-3px);
+}
+
+/* More professional tech tag styling */
+.tech-tag.javascript {
+  border-left: 3px solid #f7df1e;
+}
+
+.tech-tag.n8n {
+  border-left: 3px solid #ff6d00;
+}
+
+.tech-tag.python {
+  border-left: 3px solid #306998;
+}
+
+.tech-tag.datadog {
+  border-left: 3px solid #632ca6;
+}
+
+.tech-tag.analysis {
+  border-left: 3px solid #00bcd4;
+}
+
+.tech-tag.monitoring {
+  border-left: 3px solid #43a047;
+}
+
+.tech-tag.alerts {
+  border-left: 3px solid #e53935;
+}
+
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .experience-title {
+    text-align: center;
+  }
+  
+  .tech-list {
+    justify-content: center;
+  }
+  
+  .experience-container {
+    padding: 1.5rem;
+  }
+  
+  .tech-tag {
+    text-align: center;
+  }
+}
+
+.tech-item {
+  background: rgba(var(--primary-rgb), 0.15);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  border: 1px solid rgba(var(--primary-rgb), 0.3);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background: rgba(var(--primary-rgb), 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .fintalk-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .fintalk-title {
+    text-align: center;
+  }
+  
+  .tech-list {
+    justify-content: center;
+  }
+}
+
+/* Add this at the top of your file */
+/* Update the gap between experience sections */
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Reduced from 4rem to 2rem */
+  padding: 2rem 0;
+}
+
+/* Update the margin for each experience section */
+.experience-section {
+  width: 100%;
+  padding: 1.5rem; /* Reduced from 2rem */
+  margin: 0 auto; /* Changed from 4rem auto to 0 auto */
+  max-width: 1300px;
+}
+
+.experience-container {
+  position: relative;
+  background: rgba(30, 30, 40, 0.6); 
+  border-radius: 15px;
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  /* Removed hover effects */
+}
+
+.experience-header {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.experience-logo {
+  width: 100px;
+  background-color: #FFF;
+  height: 100px; 
+  object-fit: contain; 
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  padding: 10px; 
+}
+
+.experience-logo:hover {
+  transform: scale(1.05);
+}
+
+.experience-title h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+  background: var(--gradient-skill-card);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-title h3 {
+  font-size: 1.3rem;
+  color: var(--text-color);
+  opacity: 0.9;
+}
+
+.experience-description {
+  line-height: 1.7;
+  margin-bottom: 2rem;
+  color: var(--text-color);
+}
+
+.experience-description p {
+  margin-bottom: 1rem;
+  opacity: 0.9;
+}
+
+.tech-stack h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  opacity: 0.95;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tech-tag {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px; /* Less rounded corners for more professional look */
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  background: rgba(255, 255, 255, 0.1); /* Subtle background */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.tech-tag:hover {
+  transform: translateY(-3px);
+}
+
+/* More professional tech tag styling */
+.tech-tag.javascript {
+  border-left: 3px solid #f7df1e;
+}
+
+.tech-tag.n8n {
+  border-left: 3px solid #ff6d00;
+}
+
+.tech-tag.python {
+  border-left: 3px solid #306998;
+}
+
+.tech-tag.datadog {
+  border-left: 3px solid #632ca6;
+}
+
+.tech-tag.analysis {
+  border-left: 3px solid #00bcd4;
+}
+
+.tech-tag.monitoring {
+  border-left: 3px solid #43a047;
+}
+
+.tech-tag.alerts {
+  border-left: 3px solid #e53935;
+}
+
+@media (max-width: 768px) {
+  .experience-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.5rem;
+  }
+  
+  .experience-title {
+    text-align: center;
+  }
+  
+  .tech-list {
+    justify-content: center;
+  }
+  
+  .experience-container {
+    padding: 1.5rem;
+  }
+  
+  .tech-tag {
+    text-align: center;
+  }
+}
+
+.tech-item {
+  background: rgba(var(--primary-rgb), 0.15);
+  padding: 0.6rem 1.2rem;
+  border-radius: 30px;
+  border: 1px solid rgba(var(--primary-rgb), 0.3);
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.tech-item:hover {
+  background: rgba(var(--primary-rgb), 0.25);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .fintalk-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+  
+  .fintalk-title {
+    text-align: center;
+  }
+  
+  .tech-list {
+    justify-content: center;
+  }
+}
+
+/* Add this at the top of your file */
+.experiences-container {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 2rem 0;
+}
+
+/* Add these new tech tag styles */
+.tech-tag.html {
+  border-left: 3px solid #e34c26;
+}
+
+.tech-tag.css {
+  border-left: 3px solid #264de4;
+}
+
+.tech-tag.java {
+  border-left: 3px solid #007396;
+}
+
+.tech-tag.android {
+  border-left: 3px solid #3DDC84;
+}
+
+.tech-tag.php {
+  border-left: 3px solid #777BB4;
+}
+
+.tech-tag.sql {
+  border-left: 3px solid #f29111;
+}
+
+.tech-tag.physics {
+  border-left: 3px solid #3498db;
+}
+
+.tech-tag.calculus {
+  border-left: 3px solid #9b59b6;
+}
+
+.tech-tag.chemistry {
+  border-left: 3px solid #27ae60;
+}
+
+.tech-tag.mechanics {
+  border-left: 3px solid #e67e22;
+}
+
+.tech-tag.thermodynamics {
+  border-left: 3px solid #e74c3c;
+}
+
+.tech-tag.statistics {
+  border-left: 3px solid #1abc9c;
+}
+
+.tech-tag.oop {
+  border-left: 3px solid #8e44ad;
+}
+
+.tech-tag.llm {
+  border-left: 3px solid #2ecc71;
+}
+
+.tech-tag.api {
+  border-left: 3px solid #3498db;
+}
+
+/* Add these styles to your Experiences.css file */
+
+/* Update carousel styling for better page harmony */
+.carousel-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.experience-section {
+  min-width: 100%;
+  flex-shrink: 0;
+  padding: 0; /* Remove padding from sections */
+  margin: 0; /* Remove margin from sections */
+}
+
+.experience-container {
+  position: relative;
+  background: rgba(30, 30, 40, 0.6);
+  border-radius: 0; /* Remove border radius from containers */
+  padding: 2.5rem;
+  backdrop-filter: blur(10px);
+  border: none; /* Remove border */
+  box-shadow: none; /* Remove shadow */
+}
+
+/* Reposition carousel dots to top-right of each card */
+.carousel-dots {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  display: flex;
+  gap: 0.5rem;
+  z-index: 10;
+  padding: 8px;
+  border-radius: 20px;
+  background: rgba(30, 40, 50, 0.4);
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 0;
+  margin: 0;
+  display: block;
+}
+
+.carousel-dot.active {
+  background: var(--primary-color);
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(var(--primary-rgb), 0.5);
+}
+
+.carousel-dot:hover {
+  background: rgba(var(--primary-rgb), 0.7);
+}
+
+/* Update experiences container */
+.experiences-container {
+  display: block;
+  padding: 2rem;
+  max-width: 1300px;
+  margin: 0 auto;}

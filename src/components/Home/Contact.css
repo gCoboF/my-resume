@@ -153,10 +153,6 @@
     font-size: 1.3rem;
   }
 
-  .footer-bottom {
-    padding-top: 2rem;
-  }
-
   .copyright {
     font-size: 0.8rem;
   }
@@ -240,16 +236,6 @@
 }
 .contact-link:hover .contact-img {
   filter: brightness(1);
-}
-
-/* Footer */
-.footer-bottom {
-  width: 100%;
-  text-align: center;
-  padding-top: 3rem;
-  padding-bottom: 2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  margin-top: auto;
 }
 
 .copyright {

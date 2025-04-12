@@ -1,54 +1,62 @@
 import React from 'react';
-import './AboutMe.css';
 import { useTranslation } from 'react-i18next';
+import './AboutMe.css';
+import Timeline from './Timeline.tsx';
+import FintalkExpirience from './Experiences.tsx';
+import SkillCard from './SkillCard.tsx';
+import Languages from './Languages.tsx';
+import ComplementaryCourses from './ComplementaryCourses.tsx';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import explosao from '../../assets/explosao.png';
 
 const AboutMe: React.FC = () => {
   const { t } = useTranslation();
 
-  return (
-    <div className="about-me-page">
-      <main className="about-me-content">
-        <section className="about-me-section">
-          <div className="container">
-            <h1>{t('aboutMe.title')}</h1>
-            <div className="about-me-grid">
-              <div className="about-me-text">
-                <p>{t('aboutMe.intro')}</p>
-                <p>{t('aboutMe.experience')}</p>
-                <p>{t('aboutMe.skills')}</p>
-              </div>
-              <div className="about-me-image">
-                {/* You can add your profile image here */}
-                <div className="profile-image-placeholder"></div>
-              </div>
-            </div>
-          </div>
-        </section>
+  const sliderSettings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000
+  };
 
-        <section className="about-me-details">
-          <div className="container">
-            <h2>{t('aboutMe.background.title')}</h2>
-            <p>{t('aboutMe.background.content')}</p>
-            
-            <h2>{t('aboutMe.education.title')}</h2>
-            <ul className="education-list">
-              <li>
-                <h3>{t('aboutMe.education.degree1.name')}</h3>
-                <p>{t('aboutMe.education.degree1.institution')}</p>
-                <p>{t('aboutMe.education.degree1.period')}</p>
-              </li>
-              <li>
-                <h3>{t('aboutMe.education.degree2.name')}</h3>
-                <p>{t('aboutMe.education.degree2.institution')}</p>
-                <p>{t('aboutMe.education.degree2.period')}</p>
-              </li>
-            </ul>
-            
-            <h2>{t('aboutMe.interests.title')}</h2>
-            <p>{t('aboutMe.interests.content')}</p>
+  return (
+    <div className="about-me-container">
+      <section className="about-me-hero">
+        <div className="about-me-content">
+          <div className="about-me-text">
+            <h1 className="about-me-title">
+              {t('aboutMe.title')}
+              <span className="star-icon">✨</span>
+            </h1>
+            <p className="about-me-description">{t('aboutMe.description')}</p>
           </div>
-        </section>
-      </main>
+          
+          <div className="about-me-carousel">
+            <Slider {...sliderSettings}>
+              <div>
+                <img src={explosao} alt={t('aboutMe.images.profile1')} />
+              </div>
+              <div>
+                <img src={explosao} alt={t('aboutMe.images.profile2')} />
+              </div>
+              <div>
+                <img src={explosao} alt={t('aboutMe.images.profile3')} />
+              </div>
+            </Slider>
+          </div>
+        </div>
+      </section>
+
+      <Timeline />
+      <FintalkExpirience />
+      <SkillCard />
+      <Languages />
+      <ComplementaryCourses />
     </div>
   );
 };

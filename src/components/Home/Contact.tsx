@@ -74,10 +74,6 @@ const Contact: React.FC = () => {
           ))}
         </div>
       </div>
-      
-      <div className="footer-bottom">
-        <p className="copyright">© {new Date().getFullYear()} Gabriel Cobo</p>
-      </div>
     </footer>
   );
 };
