@@ -122,11 +122,44 @@
 .gallery-image img {
   display: block;
   width: 100%;
+  align-items: center;
   height: auto; /* Auto height to maintain aspect ratio */
   transition: transform 0.3s ease;
 }
 
+.gallery-image img[src*="Ingram"] {
+  height: 400px; /* Altura fixa baseada na imagem do Tatum */
+  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+}
+
+/* Garantir que o container da imagem do Ingram tenha altura suficiente */
+.gallery-item:has(img[src*="Ingram"]) .gallery-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+}
+
+
+.gallery-image img[src*="Ingram"] {
+  height: 100%; /* Preencher 100% da altura do container */
+  width: auto;
+  max-width: 100%;
+  object-fit: cover; /* Mudar para cover para preencher todo o espaço */
+}
+
+.gallery-item:has(img[src*="Ingram"]) .gallery-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 450px;
+  overflow: hidden; /* Garantir que a imagem não ultrapasse o container */
+}
+
 /* Hover effect with description overlay */
+/* Ajuste para o hover não ser cortado */
 .image-overlay {
   position: absolute;
   top: 0;
@@ -140,6 +173,30 @@
   opacity: 0;
   transition: opacity 0.3s ease;
   padding: 20px;
+  z-index: 10;
+}
+
+/* Centralização vertical para imagens de pixel art */
+.design-section:nth-of-type(5) .gallery-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+}
+
+.design-section:nth-of-type(5) .gallery-image img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Garantir que o conteúdo do overlay não seja cortado */
+.overlay-content {
+  text-align: center;
+  max-width: 100%;
+  overflow: visible;
 }
 
 .gallery-item:hover .image-overlay {
@@ -329,4 +386,172 @@
 /* Adicionar cursor pointer nas imagens da galeria */
 .gallery-image img {
   cursor: pointer;
+}
+
+
+/* Target the drawings section specifically */
+.design-section:nth-of-type(4) .gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-flow: dense;
+  gap: 2rem;
+}
+
+/* Make all items in the drawings section have consistent height */
+.design-section:nth-of-type(4) .gallery-item {
+  height: 300px;
+}
+
+.design-section:nth-of-type(4) .gallery-image {
+  height: 100%;
+}
+
+.design-section:nth-of-type(4) .gallery-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Responsive adjustments for the drawings section */
+@media (max-width: 992px) {
+  .design-section:nth-of-type(4) .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Music Projects Section Styles */
+.music-section {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.2), transparent);
+  padding-bottom: 80px;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2.5rem;
+}
+
+.music-item {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.music-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.music-cover {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.music-cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.music-item:hover .music-cover img {
+  transform: scale(1.05);
+}
+
+.audio-player {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.audio-player audio {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  border-radius: 30px;
+}
+
+/* Custom audio player styling */
+.audio-player audio::-webkit-media-controls-panel {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.audio-player audio::-webkit-media-controls-play-button,
+.audio-player audio::-webkit-media-controls-volume-slider,
+.audio-player audio::-webkit-media-controls-mute-button {
+  filter: invert(1);
+}
+
+/* Responsive adjustments for music section */
+@media (max-width: 768px) {
+  .music-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .music-cover {
+    height: 180px;
+  }
+}
+
+.music-icon {
+  font-size: 2.5rem;
+  color: #fff;
+}
+
+.music-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2a2a2a;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 20px auto 10px;
+}
+
+.music-cover {
+  background: #2a2a2a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 180px;
+  position: relative;
+  padding: 15px;
+  text-align: center;
+}
+
+.music-title {
+  margin-top: 10px;
+  color: #fff;
+}
+
+.music-title h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.music-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.music-item {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.audio-player {
+  padding: 10px;
+  background: #1a1a1a;
+}
+
+.audio-player audio {
+  width: 100%;
 }

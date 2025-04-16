@@ -23,6 +23,32 @@ import Kyrie from '../../assets/Artes estudo/Kyrie.jpg';
 import Tatum from '../../assets/Artes estudo/Tatum.jpg';
 import Vince from '../../assets/Artes estudo/Vince.jpg';
 
+import Goku from '../../assets/Desenhos/Goku.jpg';
+import Spyro from '../../assets/Desenhos/Spyro.jpg';
+import LuckyTails from '../../assets/Desenhos/Super Lucky Tails.png';
+import Capybara from '../../assets/Desenhos/Capybara Conecta.jpg';
+import Ori from '../../assets/Desenhos/Ori.png';
+import Dagrao from '../../assets/Desenhos/dagrao.jpg';
+
+
+import Gohan from '../../assets/PixelArt/GohanF.png';
+import Eren from '../../assets/PixelArt/Eren Jaeger.png';
+import GokuUI from '../../assets/PixelArt/GokuUI PX.png';
+
+import CrisCasual from '../../assets/PixelArt/Cris casual 2.png';
+import CrisJaleco from '../../assets/PixelArt/Cris jaleco.png';
+import Nos from '../../assets/PixelArt/NosMsm.png';
+import quarto from '../../assets/PixelArt/Quarto.png';
+import sala from '../../assets/PixelArt/sala.png';
+import UFABC from '../../assets/PixelArt/Ufs.png';
+
+import MusicProject1 from '../../assets/Musica/1.2.mp3';
+import MusicProject2 from '../../assets/Musica/2.1.mp3';
+import MusicProject3 from '../../assets/Musica/3.2.mp3';
+import Idid from '../../assets/Musica/01 - I did.mp3';
+
+import { FaMusic } from 'react-icons/fa';
+
 const DesignProjects: React.FC = () => {
   const { t }: { t: (key: string) => string } = useTranslation();
   // Adicionar estado para controlar a imagem selecionada
@@ -38,7 +64,6 @@ const DesignProjects: React.FC = () => {
     setSelectedImage(null);
   };
 
-  // Sample design projects data organized by categories
   const projectsData = {
     projects: [
       {
@@ -108,8 +133,8 @@ const DesignProjects: React.FC = () => {
     studyArts: [
       {
         id: 10,
-        title: t('designProjects.studyArts.kyrie.title'),
-        description: t('designProjects.studyArts.kyrie.description'),
+        title: 'Kyrie Irving',
+        description: 'Brooklyn Nets',
         tools: [t('common.tools.photoshop')],
         image: Kyrie,
       },
@@ -122,10 +147,10 @@ const DesignProjects: React.FC = () => {
       },
       {
         id: 12,
-        title: 'Brandom Ingram',
-        description: 'New Orleans Pelicans',
+        title: 'Vince Carter',
+        description: 'Toronto Raptors',
         tools: ['Photoshop'],
-        image: Ingram,
+        image: Vince,
       },
       {
         id: 13,
@@ -143,10 +168,10 @@ const DesignProjects: React.FC = () => {
       },
       {
         id: 15,
-        title: 'Vince Carter',
-        description: 'Toronto Raptors',
+        title: 'Brandom Ingram',
+        description: 'New Orleans Pelicans',
         tools: ['Photoshop'],
-        image: Vince,
+        image: Ingram,
       },
       {
         id: 16,
@@ -173,36 +198,145 @@ const DesignProjects: React.FC = () => {
     drawings: [
       {
         id: 20,
-        title: t('designProjects.drawings.character.title'),
-        description: t('designProjects.drawings.character.description'),
-        tools: [t('common.tools.procreate'), t('common.tools.photoshop')],
-        image: 'https://via.placeholder.com/600x400',
-        behance: 'https://behance.net/yourusername/drawing1',
+        title: t('designProjects.drawings.capybara.title'),
+        description: t('designProjects.drawings.capybara.description'),
+        tools: [t('common.tools.mesa'), t('common.tools.photoshop')],
+        image: Capybara,
       },
       {
-        id: 6,
-        title: 'Landscape Illustration',
-        description: 'Fantasy landscape illustration with detailed environment design',
-        tools: ['Clip Studio Paint', 'Photoshop'],
-        image: 'https://via.placeholder.com/600x400',
+        id: 21,
+        title: t('designProjects.drawings.gokussj.title'),
+        description: t('designProjects.drawings.gokussj.description'),
+        tools: [t('common.tools.mesa'), t('common.tools.photoshop')],
+        image: Goku,
+      },
+      {
+        id: 22,
+        title: t('designProjects.drawings.dragao.title'),
+        description: t('designProjects.drawings.dragao.description'),
+        tools: [t('common.tools.mesa'), t('common.tools.photoshop')],
+        image: Dagrao,
+      },
+      {
+        id: 23,
+        title: t('designProjects.drawings.pxgohan.title'),
+        description: t('designProjects.drawings.pxgohan.description'),
+        tools: [t('common.tools.pixil')],
+        image: Gohan,
+      },
+      {
+        id: 24,
+        title: t('designProjects.drawings.pxeren.title'),
+        description: t('designProjects.drawings.pxeren.description'),
+        tools: [t('common.tools.pixil')],
+        image: Eren,
+      },
+      {
+        id: 25,
+        title: t('designProjects.drawings.pxgoku.title'),
+        description: t('designProjects.drawings.pxgoku.description'),
+        tools: [t('common.tools.pixil')],
+        image: GokuUI,
+      },
+      {
+        id: 26,
+        title: t('designProjects.drawings.dluckytails.title'),
+        description: t('designProjects.drawings.dluckytails.description'),
+        tools: [t('common.tools.paint')],
+        image: LuckyTails,
+      },
+      {
+        id: 27,
+        title: t('designProjects.drawings.dspyro.title'),
+        description: t('designProjects.drawings.dspyro.description'),
+        tools: [t('common.tools.paint')],
+        image: Spyro,
+      },
+      {
+        id: 28,
+        title: t('designProjects.drawings.dori.title'),
+        description: t('designProjects.drawings.dori.description'),
+        tools: [t('common.tools.paint')],
+        image: Ori,
       },
     ],
     pixelArt: [
       {
-        id: 30,
-        title: t('designProjects.pixelArt.gameCharacter.title'),
-        description: t('designProjects.pixelArt.gameCharacter.description'),
-        tools: [t('common.tools.aseprite'), t('common.tools.photoshop')],
-        image: 'https://via.placeholder.com/600x400',
-        behance: 'https://behance.net/yourusername/pixel1',
+        id: 31,
+        title: t('designProjects.pixelArt.criscasual.title'),
+        description: t('designProjects.pixelArt.criscasual.description'),
+        tools: [t('common.tools.pixil')],
+        image: CrisCasual,
       },
       {
-        id: 8,
-        title: 'Pixel Environment',
-        description: 'Detailed pixel art environment for retro-style game',
-        tools: ['Aseprite', 'Photoshop'],
-        image: 'https://via.placeholder.com/600x400',
+        id: 32,
+        title: t('designProjects.pixelArt.crisjaleco.title'),
+        description: t('designProjects.pixelArt.crisjaleco.description'),
+        tools: [t('common.tools.pixil')],
+        image: CrisJaleco,
       },
+      {
+        id: 33,
+        title: t('designProjects.pixelArt.devs.title'),
+        description: t('designProjects.pixelArt.devs.description'),
+        tools: [t('common.tools.pixil')],
+        image: Nos,
+      },
+      {
+        id: 34,
+        title: t('designProjects.pixelArt.quarto.title'),
+        description: t('designProjects.pixelArt.quarto.description'),
+        tools: [t('common.tools.pixil')],
+        image: quarto,
+      },
+      {
+        id: 35,
+        title: t('designProjects.pixelArt.casa.title'),
+        description: t('designProjects.pixelArt.casa.description'),
+        tools: [t('common.tools.pixil')],
+        image: sala,
+      },
+      {
+        id: 36,
+        title: t('designProjects.pixelArt.ufabc.title'),
+        description: t('designProjects.pixelArt.ufabc.description'),
+        tools: [t('common.tools.pixil')],
+        image: UFABC,
+      }
+    ],
+    musicProjects: [
+      {
+        id: 40,
+        title: "Cris' Adventures #01",
+        description: "Cris' Adventures #01",
+        tools: [],
+        audioSrc: MusicProject1,
+        icon: <FaMusic className="music-icon" />
+      },
+      {
+        id: 41,
+        title: "Cris' Adventures #02",
+        description: "Cris' Adventures #01",
+        tools: [],
+        audioSrc: MusicProject2,
+        icon: <FaMusic className="music-icon" />
+      },
+      {
+        id: 42,
+        title: "Cris' Adventures #03",
+        description: "Cris' Adventures #01",
+        tools: [],
+        audioSrc: MusicProject3,
+        icon: <FaMusic className="music-icon" />
+      },
+      {
+        id: 43,
+        title: 'Chaplin',
+        audioSrc: Idid,
+        description: "Chaplin",
+        tools: [],
+        icon: <FaMusic className="music-icon" />
+      }
     ]
   };
 
@@ -214,19 +348,22 @@ const DesignProjects: React.FC = () => {
         <div className="gallery-grid">
           {projects.map(project => {
             // Extrair o nome do arquivo da imagem para usar como identificador
-            const imageName = typeof project.image === 'string' 
-              ? project.image.split('/').pop() 
+            const imageName = typeof project.image === 'string'
+              ? project.image.split('/').pop()
               : String(project.image).split('/').pop();
-            
+
             // Verificar se é um dos carrosséis que deve ocupar duas colunas
-            const isWideImage = imageName && 
+            const isWideImage = imageName &&
               (imageName.includes('Carrossel') && !imageName.includes('DataSphere'));
-            
+
+            // Verificar se é pixel art para centralização vertical
+            const isPixelArt = title.includes('Pixel Art');
+
             return (
               <div 
                 key={project.id} 
                 className="gallery-item" 
-                data-image={isWideImage ? 'Carrossel' : ''}
+                data-image={isWideImage ? 'Carrossel' : isPixelArt ? 'pixel-art' : ''}
                 onClick={() => handleImageClick(project.image)}
               >
                 <div className="gallery-image">
@@ -253,6 +390,43 @@ const DesignProjects: React.FC = () => {
       </div>
     </section>
   );
+  const renderMusicProjectSection = (title: string, projects: any[]) => (
+    <section className="design-section music-section">
+      <div className="container">
+        <h2 className="section-title">{title}</h2>
+        <div className="music-grid">
+          {projects.map(project => (
+            <div key={project.id} className="music-item">
+              <div className="music-cover">
+                <div className="music-icon-container">
+                  {project.icon || <FaMusic className="music-icon" />}
+                </div>
+                <div className="music-title">
+                  <h3>{project.title}</h3>
+                </div>
+                <div className="image-overlay">
+                  <div className="overlay-content">
+                    <h3>{project.title}</h3>
+                    <p>{project.description}</p>
+                    <div className="project-tech">
+                      {project.tools.map((tool: string, index: number) => (
+                        <span key={index} className="tech-tag">{tool}</span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="audio-player">
+                <audio controls src={project.audioSrc}>
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
 
   return (
     <div className="design-projects-page">
@@ -268,6 +442,7 @@ const DesignProjects: React.FC = () => {
         {renderProjectSection(t('designProjects.sections.studyArts'), projectsData.studyArts)}
         {renderProjectSection(t('designProjects.sections.drawings'), projectsData.drawings)}
         {renderProjectSection(t('designProjects.sections.pixelArt'), projectsData.pixelArt)}
+        {renderMusicProjectSection(t('designProjects.sections.musicProjects', 'Music Projects'), projectsData.musicProjects)}
       </main>
 
       {/* Modal para exibir a imagem ampliada */}

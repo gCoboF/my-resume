@@ -289,8 +289,8 @@ export const pt = {
       }
     },
     designProjects: {
-      title: "Pagina em desenvolvimento...",
-      description: "Uma coleção dos meus trabalhos de design, incluindo UI/UX, identidade visual e artes digitais.",
+      title: "Meus Projetos de Design",
+      description: "Uma coleção dos meus trabalhos de design, incluindo post para Instagram, Pixel Arts, identidade visual e artes digitais.",
       sections: {
         projects: "Projetos",
         studyArts: "Artes de Estudo",
@@ -300,11 +300,11 @@ export const pt = {
       projects: {
         conectaLaunch: {
           title: "Lançamento Oficial Conecta",
-          description: "Redesenho completo da interface do aplicativo móvel com foco na experiência do usuário"
+          description: "Lançamento oficial do aplicativo UFABConecta no Android "
         },
         betaIOS: {
           title: "Beta iOS",
-          description: "Design para o lançamento da versão beta para iOS"
+          description: "Anuncio da beta aberta no IOS"
         },
         cincoMil: {
           title: "5 Mil Downloads",
@@ -323,34 +323,80 @@ export const pt = {
           description: "Design de carrossel promocional para o projeto IEEE"
         },
         instagram: {
-          title: "Conceito Instagram",
-          description: "Conceito de design para Instagram"
+          title: "Conceito Instagram CS IEEE",
+          description: "Proposta de Identidade Visual para o Instagram do CS IEEE"
         },
         webCS: {
-          title: "WebCS",
-          description: "Design para plataforma web CS"
+          title: "Processo Seletivo e Criação de logo WebCS",
+          description: "Imagem de divulgação do processo seletivo e Criação do logo do projeto WebCS"
         },
         restauraCS: {
-          title: "RestauraCS",
-          description: "Design para o projeto RestauraCS"
+          title: "Processo Seletivo Restaura CS",
+          description: "Imagem de divulgação do processo seletivo do Restaura CS"
         }
       },
-      studyArts: {
-        kyrie: {
-          title: "Kyrie Irving",
-          description: "Brooklyn Nets"
-        },
-      },
       drawings: {
-        character: {
-          title: "Design de Personagem",
-          description: "Design de personagem original para projeto de animação"
+        capybara: {
+          title: "Capivara UFABConecta",
+          description: "Criação do mascote e persona do agente no projeto UFABConecta"
         },
+        gokussj: {
+          title: "Goku SSJ4",
+          description: "Primeiro desenho utilizando mesa digitalizadora"
+        },
+        dragao: {
+          title: "Dagrão UFABC",
+          description: "Desenho utilizando o conceito de realidade aumentada"
+        },
+        pxgohan: {
+          title: "PixelArt Gohan",
+          description: "Desenho finalizado no estilo pixelart"
+        },
+        pxeren: {
+          title: "PixelArt Eren",
+          description: "Esboço de personagem no estilo pixelArt"
+        },
+        pxgoku: {
+          title: "PixelArt Goku",
+          description: "Estudo em Pixel Art do Goku, utilizando um canvas reduzido"
+        },
+        dluckytails: {
+          title: "SuperLuckyTails",
+          description: "Estudo de desenho feito com o mouse"
+        },
+        dspyro: {
+          title: "Spyro",
+          description: "Estudo de desenho feito com o mouse"
+        },
+        dori: {
+          title: "Ori",
+          description: "Estudo de desenho feito com o mouse"
+        }
       },
       pixelArt: {
-        gameCharacter: {
-          title: "Sprite de Personagem de Jogo",
-          description: "Sprite sheet de personagem em estilo 16-bit para projeto de jogo indie"
+        criscasual: {
+          title: "Cris' Adventures casual",
+          description: "Criação/Edição de sprites de personagem skin casual"
+        },
+        crisjaleco: {
+          title: "Cris' Adventures jaleco",
+          description: "Criação/Edição de sprites de personagem skin de jaleco"
+        },
+        devs: {
+          title: "Personagens desenvolvedores do Jogo",
+          description: "Criação dos personagens dos desenvolvedores do jogo "
+        },
+        quarto: {
+          title: "Cenário Quarto Cris'Adventures",
+          description: "Criação/Edição de sprites do quarto"
+        },
+        casa: {
+          title: "Cenário Casa Cris'Adventures",
+          description: "Criação/Edição de sprites da casa"
+        },
+        ufabc: {
+          title: "Cenário UFABC Cris'Adventures",
+          description: "Criação da sprites da UFABC"
         },
       }
     },
@@ -359,13 +405,12 @@ export const pt = {
       tools: {
         photoshop: "Photoshop",
         illustrator: "Illustrator",
-        procreate: "Procreate",
-        clipStudioPaint: "Clip Studio Paint",
-        aseprite: "Aseprite"
+        paint: "Paint",
+        pixil: "Pixil",
+        mesa: "Mesa Digitalizadora"
       },
       enlargedView: "Visualização ampliada"
     },
-    //Resume Page
     resume:{
       title: 'Meu Currículo' 
     }
