@@ -37,8 +37,8 @@ export const pt = {
     //About Me Page
 
     aboutMe: {
-      title: 'Pagina em desenvolvimento',
-      description: 'Sou um desenvolvedor apaixonado por tecnologia e inovação, atualmente cursando Ciência da Computação na UFABC. Como estagiário na Fintalk SA, tenho me especializado no desenvolvimento de agents e soluções inteligentes. Minha jornada na tecnologia começou com uma curiosidade natural por resolver problemas e criar experiências digitais significativas. Além do desenvolvimento de software, nutro um forte interesse por Inteligência Artificial, Design de Interfaces e Desenvolvimento de Jogos, sempre buscando combinar criatividade com soluções técnicas robustas.',
+      title: 'Sobre mim',
+      description: 'Sou um desenvolvedor apaixonado por IAs, atualmente cursando Ciência da Computação na UFABC. Atuo como estagiário em tecnologia conversacional na Fintalk S.A., onde desenvolvo agentes em JavaScript e automações voltadas à arquitetura de soluções.\nMinha paixão por tecnologia começou na ETEC, onde tive meu primeiro contato com o universo de front-end, back-end e ciência de dados. Desde então, tenho buscado aprofundar meus conhecimentos com projetos pessoais, como um agente baseado em RAG e esse meu portfólio em React. Além da programação, sempre fui fascinado por artes visuais, um dos meus maiores hobbies junto aos esportes. O desenho aguçou meu olhar para o design e me levou a criação de artes promocionais em projetos dos quais também atuei como desenvolvedor.',
       images: {
         profile1: 'Foto de perfil 1',
         profile2: 'Foto de perfil 2',
@@ -160,36 +160,65 @@ export const pt = {
         paragraph1: "Minha educação em Ciência da Computação me equipou com conhecimentos teóricos e habilidades práticas em desenvolvimento de software, algoritmos e estruturas de dados. O programa enfatizou a resolução de problemas e o pensamento computacional em vários domínios da ciência da computação.",
         paragraph2: "Adquiri experiência em princípios de programação orientada a objetos, gerenciamento de banco de dados e metodologias modernas de desenvolvimento de software. Além disso, explorei tecnologias emergentes como Modelos de Linguagem Grandes (LLMs), aprimorando minha capacidade de trabalhar com soluções baseadas em IA."
       },
-      technologiesUsed: "Tecnologias Utilizadas",
-      technologiesLearned: "Tecnologias Aprendidas",
-      areasOfStudy: "Áreas de Estudo",
-      technologiesAndConcepts: "Tecnologias e Conceitos",
-      technologies: {
-        javascript: "JavaScript",
-        n8n: "n8n (Automação)",
-        python: "Python",
-        datadog: "Datadog",
-        dataAnalysis: "Análise de Dados",
-        logMonitoring: "Monitoramento de Logs",
-        alertConfig: "Configuração de Alertas",
-        api: "API",
-        html: "HTML",
-        css: "CSS",
-        java: "Java",
-        androidStudio: "Android Studio",
-        php: "PHP",
-        sql: "SQL",
-        oop: "Programação Orientada a Objetos",
-        llm: "LLM"
+      monitoriaExperience: {
+        title: "Monitoria Inclusiva",
+        subtitle: "UFABC (2023-2024)",
+        paragraph1: "Atuei como monitor inclusivo na UFABC, auxiliando estudantes com necessidades especiais em disciplinas de exatas.",
+        paragraph2: "Desenvolvi materiais adaptados e estratégias de ensino personalizadas para garantir a acessibilidade e o aprendizado efetivo."
       },
-      subjects: {
-        physics: "Física",
-        calculus: "Cálculo",
-        chemistry: "Química",
-        mechanics: "Mecânica",
-        thermodynamics: "Termodinâmica",
-        statistics: "Estatística"
+      ieeeExperience: {
+        logoAlt: "Logo IEEE UFABC",
+        title: "Designer IEEE",
+        subtitle: "IEEE UFABC (2024-2025)",
+        paragraph1: "Atuo como designer no ramo estudantil do IEEE na UFABC, criando materiais visuais para eventos, workshops e mídias sociais.",
+        paragraph2: "Desenvolvo identidades visuais para projetos técnicos e científicos, contribuindo para a divulgação de conhecimento em engenharia e tecnologia."
+      },
+      techTitles: {
+        developedSkills: "Habilidades Desenvolvidas",
+        toolsAndSkills: "Ferramentas e Habilidades"
+      },
+      technologies: {
+        teaching: "Ensino Adaptativo",
+        accessibility: "Acessibilidade",
+        communication: "Comunicação",
+        patience: "Paciência",
+        empathy: "Empatia",
+        photoshop: "Adobe Photoshop",
+        illustrator: "Adobe Illustrator",
+        uiux: "UI/UX",
+        graphicDesign: "Design Gráfico",
+        visualCommunication: "Comunicação Visual"
       }
+    },
+    technologiesUsed: "Tecnologias Utilizadas",
+    technologiesLearned: "Tecnologias Aprendidas",
+    areasOfStudy: "Áreas de Estudo",
+    technologiesAndConcepts: "Tecnologias e Conceitos",
+    technologies: {
+      javascript: "JavaScript",
+      n8n: "n8n (Automação)",
+      python: "Python",
+      datadog: "Datadog",
+      dataAnalysis: "Análise de Dados",
+      logMonitoring: "Monitoramento de Logs",
+      alertConfig: "Configuração de Alertas",
+      api: "API",
+      html: "HTML",
+      css: "CSS",
+      java: "Java",
+      androidStudio: "Android Studio",
+      php: "PHP",
+      sql: "SQL",
+      oop: "Programação Orientada a Objetos",
+      llm: "LLM"
+    },
+    subjects: {
+      physics: "Física",
+      calculus: "Cálculo",
+      chemistry: "Química",
+      mechanics: "Mecânica",
+      thermodynamics: "Termodinâmica",
+      statistics: "Estatística"
     },
     skills: {
       title: 'Minhas Habilidades',
@@ -400,7 +429,7 @@ export const pt = {
         },
       }
     },
-    
+
     common: {
       tools: {
         photoshop: "Photoshop",
@@ -411,8 +440,9 @@ export const pt = {
       },
       enlargedView: "Visualização ampliada"
     },
-    resume:{
-      title: 'Meu Currículo' 
+
+    resume: {
+      title: 'Meu Currículo'
     }
   }
-};
+}; 

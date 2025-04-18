@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';  // Add useEffect import
 import { useTranslation } from 'react-i18next';
 import './AboutMe.css';
 import Timeline from './Timeline.tsx';
@@ -23,6 +23,16 @@ const AboutMe: React.FC = () => {
     autoplay: true,
     autoplaySpeed: 3000
   };
+
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash === '#habilidades') {
+      const element = document.getElementById('habilidades');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, []);
 
   return (
     <div className="about-me-container">

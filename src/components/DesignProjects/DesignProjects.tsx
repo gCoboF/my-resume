@@ -341,12 +341,17 @@ const DesignProjects: React.FC = () => {
   };
 
   // Function to render a section of projects
-  const renderProjectSection = (title: string, projects: any[]) => (
+  // Modificar a função renderProjectSection para adicionar suporte mobile
+  const renderProjectSection = (title: string, projects: any[]) => {
+  // Verificar se estamos em um dispositivo móvel
+  const isMobile = window.innerWidth <= 767;
+  
+  return (
     <section className="design-section">
       <div className="container">
         <h2 className="section-title">{title}</h2>
         <div className="gallery-grid">
-          {projects.map(project => {
+          {projects.map((project, index) => {
             // Extrair o nome do arquivo da imagem para usar como identificador
             const imageName = typeof project.image === 'string'
               ? project.image.split('/').pop()
@@ -383,29 +388,9 @@ const DesignProjects: React.FC = () => {
                     </div>
                   </div>
                 </div>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-    </section>
-  );
-  const renderMusicProjectSection = (title: string, projects: any[]) => (
-    <section className="design-section music-section">
-      <div className="container">
-        <h2 className="section-title">{title}</h2>
-        <div className="music-grid">
-          {projects.map(project => (
-            <div key={project.id} className="music-item">
-              <div className="music-cover">
-                <div className="music-icon-container">
-                  {project.icon || <FaMusic className="music-icon" />}
-                </div>
-                <div className="music-title">
-                  <h3>{project.title}</h3>
-                </div>
-                <div className="image-overlay">
-                  <div className="overlay-content">
+                {/* Informações para visualização mobile */}
+                {isMobile && (
+                  <div className="mobile-item-info">
                     <h3>{project.title}</h3>
                     <p>{project.description}</p>
                     <div className="project-tech">
@@ -414,6 +399,40 @@ const DesignProjects: React.FC = () => {
                       ))}
                     </div>
                   </div>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        {/* Indicador de scroll para mobile */}
+        {isMobile && projects.length > 1 && (
+          <div className="scroll-indicator">
+            {projects.map((_, index) => (
+              <div key={index} className={`scroll-dot ${index === 0 ? 'active' : ''}`}></div>
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+  );
+};
+
+const renderMusicProjectSection = (title: string, projects: any[]) => {
+  const isMobile = window.innerWidth <= 767;
+  
+  return (
+    <section className="design-section music-section">
+      <div className="container">
+        <h2 className="section-title">{title}</h2>
+        <div className="music-grid">
+          {projects.map((project, index) => (
+            <div key={project.id} className="music-item">
+              <div className="music-cover">
+                <div className="music-icon-container">
+                  {project.icon || <FaMusic className="music-icon" />}
+                </div>
+                <div className="music-title">
+                  <h3>{project.title}</h3>
                 </div>
               </div>
               <div className="audio-player">
@@ -421,14 +440,81 @@ const DesignProjects: React.FC = () => {
                   Your browser does not support the audio element.
                 </audio>
               </div>
+              {isMobile && (
+                <div className="mobile-item-info">
+                  <p>{project.description}</p>
+                </div>
+              )}
             </div>
           ))}
         </div>
+        {/* Add scroll indicator for mobile */}
+        {isMobile && projects.length > 1 && (
+          <div className="scroll-indicator">
+            {projects.map((_, index) => (
+              <div key={index} className="scroll-dot" />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );
+};
 
-  return (
+// Adicionar um hook de efeito para detectar mudanças de tamanho da tela
+React.useEffect(() => {
+  // Função para atualizar os indicadores de scroll conforme o usuário rola
+  const updateScrollIndicators = () => {
+    const galleries = document.querySelectorAll('.gallery-grid');
+    
+    galleries.forEach(gallery => {
+      const items = gallery.querySelectorAll('.gallery-item');
+      const dots = gallery.parentElement?.querySelectorAll('.scroll-dot');
+      
+      if (!dots || items.length <= 1) return;
+      
+      const scrollLeft = gallery.scrollLeft;
+      const containerWidth = gallery.clientWidth;
+      const itemWidth = (items[0] as HTMLElement).offsetWidth + 15; // 15px é o gap entre itens
+      
+      // Calcular o índice com base na posição de rolagem
+      const activeIndex = Math.round(scrollLeft / itemWidth);
+      
+      // Garantir que o índice esteja dentro dos limites
+      const safeIndex = Math.max(0, Math.min(activeIndex, items.length - 1));
+      
+      // Atualizar os dots
+      dots.forEach((dot, index) => {
+        if (index === safeIndex) {
+          dot.classList.add('active');
+        } else {
+          dot.classList.remove('active');
+        }
+      });
+    });
+  };
+  
+  // Adicionar event listeners
+  const galleries = document.querySelectorAll('.gallery-grid');
+  galleries.forEach(gallery => {
+    gallery.addEventListener('scroll', updateScrollIndicators);
+  });
+  
+  // Inicializar os indicadores
+  setTimeout(updateScrollIndicators, 100);
+  
+  window.addEventListener('resize', updateScrollIndicators);
+  
+  // Cleanup
+  return () => {
+    galleries.forEach(gallery => {
+      gallery.removeEventListener('scroll', updateScrollIndicators);
+    });
+    window.removeEventListener('resize', updateScrollIndicators);
+  };
+}, []);
+
+return (
     <div className="design-projects-page">
       <main className="design-projects-content">
         <section className="design-projects-hero">

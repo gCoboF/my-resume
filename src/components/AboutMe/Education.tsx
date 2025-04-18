@@ -102,7 +102,6 @@ const Education = () => {
     return educations.findIndex(edu => edu.id === id);
   };
 
-  // Expose method to global scope for Timeline component to use
   useEffect(() => {
     // @ts-ignore
     window.goToEducationById = (id: string) => {

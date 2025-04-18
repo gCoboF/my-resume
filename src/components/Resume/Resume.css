@@ -1,3 +1,7 @@
+.resume-title {
+  margin-top: 5rem;
+}
+
 .resume-container {
   width: 100%;
   max-width: 1200px;
@@ -109,6 +113,7 @@
   }
   
   .resume-title {
+    margin-top: 1rem;
     font-size: 2rem;
   }
   

@@ -1,10 +1,10 @@
 import React from 'react';
 import './SkillCard.css';
 import { useTranslation } from 'react-i18next';
-import { FaJsSquare, FaPython, FaJava, FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaGitAlt } from 'react-icons/fa';
-import { SiAndroidstudio, SiDatadog, SiTypescript, SiFlutter, SiFirebase } from 'react-icons/si';
-import { MdMonitorHeart, MdNotifications, MdApi, MdAutoFixHigh, MdGroups, MdLightbulb } from 'react-icons/md';
-import { BsCodeSquare, BsRobot, BsKanban } from 'react-icons/bs';
+import { FaPython, FaJava, FaHtml5, FaCss3Alt, FaReact, FaDatabase, FaGitAlt } from 'react-icons/fa';
+import { SiDatadog, SiTypescript, SiFlutter, SiFirebase } from 'react-icons/si';
+import { MdMonitorHeart, MdApi, MdAutoFixHigh, MdGroups, MdLightbulb } from 'react-icons/md';
+import { BsCodeSquare,  BsKanban } from 'react-icons/bs';
 
 const SkillCard = () => {
   const { t } = useTranslation();
@@ -143,7 +143,7 @@ const SkillCard = () => {
   const [softCol1, softCol2] = splitIntoColumns(softSkills);
 
   return (
-    <section className="skills-container">
+    <section className="skills-container" id="habilidades">
       <h2 className="skills-title">
         {t('skills.mainTitle')}
         <span className="skills-icon">🛠️</span>

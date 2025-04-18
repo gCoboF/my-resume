@@ -2,6 +2,10 @@ import React, { useState, useRef, useEffect } from 'react';
 import './SkillCards.css';
 import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
+import { FaPython, FaReact, FaDatabase} from 'react-icons/fa';
+import { SiTypescript } from 'react-icons/si';
+import { MdAutoFixHigh} from 'react-icons/md';
+
 
 const SkillCards: React.FC = () => {
   const { t } = useTranslation();
@@ -20,12 +24,12 @@ const SkillCards: React.FC = () => {
   }, []);
 
   const skills = [
-    { name: 'JavaScript', description: 'Web Development', icon: '🟨', link: '#javascript' },
-    { name: 'React', description: 'Frontend Development', icon: '⚛️', link: '#react' },
-    { name: 'n8n', description: 'Workflow Automation', icon: '🔄', link: '#n8n' },
+    { name: 'TypeScript', description: 'Web Development', icon: <SiTypescript />, link: '#javascript' },
+    { name: 'React', description: 'Frontend Development', icon: <FaReact />, link: '#react' },
+    { name: 'n8n', description: 'Workflow Automation', icon: <MdAutoFixHigh />, link: '#n8n' },
     { name: 'Photoshop', description: 'Digital Design', icon: '🎨', link: '#photoshop' },
-    { name: 'Python', description: 'AI & Data Science', icon: '🐍', link: '#python' },
-    { name: 'SQL', description: 'Database Management', icon: '🗄️', link: '#sql' },
+    { name: 'Python', description: 'AI & Data Science', icon: <FaPython />, link: '#python' },
+    { name: 'SQL', description: 'Database Management', icon: <FaDatabase />, link: '#sql' },
     { name: 'Prompt Engineering', description: 'AI Interaction & LLMs', icon: '🤖', link: '#prompt' },
     { name: t('skills.seeMore'), description: t('skills.seeMoreDesc'), icon: '+', link: '/skills' }
   ];
@@ -40,7 +44,7 @@ const SkillCards: React.FC = () => {
   };
 
   const handleSeeMore = () => {
-    navigate('/dev-projects');
+    navigate('/about#habilidades');  // Changed to match the skills section ID
     window.scrollTo(0, 0);
   };
 
@@ -67,25 +71,9 @@ const SkillCards: React.FC = () => {
         ))}
       </div>
       {isMobile && (
-        <>
-          <div className="carousel-dots">
-            {skills.slice(0, -1).map((_, index) => (
-              <span 
-                key={index}
-                className={`dot ${index === activeIndex ? 'active' : ''}`}
-                onClick={() => {
-                  gridRef.current?.scrollTo({
-                    left: index * 280,
-                    behavior: 'smooth'
-                  });
-                }}
-              />
-            ))}
-          </div>
-          <button onClick={handleSeeMore} className="see-more-button">
-            {t('skills.seeMore')} +
-          </button>
-        </>
+        <button onClick={handleSeeMore} className="see-more-button">
+          {t('skills.seeMore')} +
+        </button>
       )}
     </section>
   );

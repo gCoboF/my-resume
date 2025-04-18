@@ -15,7 +15,7 @@ const Experiences = () => {
     {
       id: "etec-experience",
       logo: etecLogo,
-      logoAlt: "ETEC Logo",
+      logoAlt: t('experiences.etec.logoAlt'),
       title: t('experiences.etec.title'),
       subtitle: t('experiences.etec.subtitle'),
       paragraphs: [
@@ -24,12 +24,12 @@ const Experiences = () => {
       ],
       techTitle: t('experiences.technologiesLearned'),
       techs: [
-        { name: t('experiences.technologies.html'), className: "html" },
-        { name: t('experiences.technologies.css'), className: "css" },
-        { name: t('experiences.technologies.java'), className: "java" },
-        { name: t('experiences.technologies.androidStudio'), className: "android" },
-        { name: t('experiences.technologies.php'), className: "php" },
-        { name: t('experiences.technologies.sql'), className: "sql" }
+        { name: t('technologies.html'), className: "html" },
+        { name: t('technologies.css'), className: "css" },
+        { name: t('technologies.java'), className: "java" },
+        { name: t('technologies.androidStudio'), className: "android" },
+        { name: t('technologies.php'), className: "php" },
+        { name: t('technologies.sql'), className: "sql" }
       ]
     },
     {
@@ -74,65 +74,42 @@ const Experiences = () => {
     {
       id: "monitoria-experience",
       logo: uniLogo,
-      logoAlt: "UFABC Logo",
-      title: "Monitoria Inclusiva",
-      subtitle: "UFABC (2023-2024)",
+      logoAlt: t('experiences.monitoriaExperience.logoAlt'),
+      title: t('experiences.monitoriaExperience.title'),
+      subtitle: t('experiences.monitoriaExperience.subtitle'),
       paragraphs: [
-        "Atuei como monitor inclusivo na UFABC, auxiliando estudantes com necessidades especiais em disciplinas de exatas.",
-        "Desenvolvi materiais adaptados e estratégias de ensino personalizadas para garantir a acessibilidade e o aprendizado efetivo."
+        t('experiences.monitoriaExperience.paragraph1'),
+        t('experiences.monitoriaExperience.paragraph2')
       ],
-      techTitle: "Habilidades Desenvolvidas",
+      techTitle: t('experiences.techTitles.developedSkills'),
       techs: [
-        { name: "Ensino Adaptativo", className: "teaching" },
-        { name: "Acessibilidade", className: "accessibility" },
-        { name: "Comunicação", className: "communication" },
-        { name: "Paciência", className: "patience" },
-        { name: "Empatia", className: "empathy" }
+        { name: t('experiences.technologies.teaching'), className: "teaching" },
+        { name: t('experiences.technologies.accessibility'), className: "accessibility" },
+        { name: t('experiences.technologies.communication'), className: "communication" },
+        { name: t('experiences.technologies.patience'), className: "patience" },
+        { name: t('experiences.technologies.empathy'), className: "empathy" }
       ]
     },
     {
       id: "ieee-experience",
-      logo: uniLogo, // Substitua por um logo do IEEE se disponível
-      logoAlt: "IEEE UFABC Logo",
-      title: "Designer IEEE",
-      subtitle: "IEEE UFABC (2024-2025)",
+      logo: uniLogo,
+      logoAlt: t('experiences.ieeeExperience.logoAlt'),
+      title: t('experiences.ieeeExperience.title'),
+      subtitle: t('experiences.ieeeExperience.subtitle'),
       paragraphs: [
-        "Atuo como designer no ramo estudantil do IEEE na UFABC, criando materiais visuais para eventos, workshops e mídias sociais.",
-        "Desenvolvo identidades visuais para projetos técnicos e científicos, contribuindo para a divulgação de conhecimento em engenharia e tecnologia."
+        t('experiences.ieeeExperience.paragraph1'),
+        t('experiences.ieeeExperience.paragraph2')
       ],
-      techTitle: "Ferramentas e Habilidades",
+      techTitle: t('experiences.techTitles.toolsAndSkills'),
       techs: [
-        { name: "Adobe Photoshop", className: "photoshop" },
-        { name: "Adobe Illustrator", className: "illustrator" },
-        { name: "UI/UX", className: "uiux" },
-        { name: "Design Gráfico", className: "graphic" },
-        { name: "Comunicação Visual", className: "visual" }
-      ]
-    },
-    {
-      id: "fintalk-experience",
-      logo: fintalkLogo,
-      logoAlt: "Fintalk Logo",
-      title: t('experiences.fintalk.title'),
-      subtitle: t('experiences.fintalk.subtitle'),
-      paragraphs: [
-        t('experiences.fintalk.paragraph1'),
-        t('experiences.fintalk.paragraph2'),
-        t('experiences.fintalk.paragraph3')
-      ],
-      techTitle: t('experiences.technologiesUsed'),
-      techs: [
-        { name: t('experiences.technologies.javascript'), className: "javascript" },
-        { name: t('experiences.technologies.n8n'), className: "n8n" },
-        { name: t('experiences.technologies.python'), className: "python" },
-        { name: t('experiences.technologies.datadog'), className: "datadog" },
-        { name: t('experiences.technologies.dataAnalysis'), className: "analysis" },
-        { name: t('experiences.technologies.logMonitoring'), className: "monitoring" },
-        { name: t('experiences.technologies.alertConfig'), className: "alerts" },
-        { name: t('experiences.technologies.api'), className: "api" }
+        { name: t('experiences.technologies.photoshop'), className: "photoshop" },
+        { name: t('experiences.technologies.illustrator'), className: "illustrator" },
+        { name: t('experiences.technologies.uiux'), className: "uiux" },
+        { name: t('experiences.technologies.graphicDesign'), className: "graphic" },
+        { name: t('experiences.technologies.visualCommunication'), className: "visual" }
       ]
     }
-  ];
+];
 
   // Function to navigate to a specific experience
   const goToExperience = (index: number) => {
