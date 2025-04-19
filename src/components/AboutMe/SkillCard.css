@@ -111,6 +111,11 @@
     gap: 1.5rem;
   }
 
+  .skills-column {
+    margin-right: 6%;
+    margin-left: -7%;
+  }
+
   .skill-card {
     display: flex;
     flex-direction: column;
