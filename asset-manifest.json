@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-resume/static/css/main.6402ee3a.css",
-    "main.js": "/my-resume/static/js/main.88b3924f.js",
+    "main.css": "/my-resume/static/css/main.4b50c209.css",
+    "main.js": "/my-resume/static/js/main.92287586.js",
     "static/media/dagrao.jpg": "/my-resume/static/media/dagrao.59adfd75d764be95930e.jpg",
     "static/media/2.1.mp3": "/my-resume/static/media/2.1.5edd12756b71db19d42b.mp3",
     "static/media/01 - I did.mp3": "/my-resume/static/media/01 - I did.34297752d02d5a8e582e.mp3",
@@ -58,11 +58,11 @@
     "static/media/github.svg": "/my-resume/static/media/github.3893b029a7c4e887090695710ffa9a1e.svg",
     "index.html": "/my-resume/index.html",
     "static/media/linkedin.svg": "/my-resume/static/media/linkedin.51460f7393894c54c6f470382752d895.svg",
-    "main.6402ee3a.css.map": "/my-resume/static/css/main.6402ee3a.css.map",
-    "main.88b3924f.js.map": "/my-resume/static/js/main.88b3924f.js.map"
+    "main.4b50c209.css.map": "/my-resume/static/css/main.4b50c209.css.map",
+    "main.92287586.js.map": "/my-resume/static/js/main.92287586.js.map"
   },
   "entrypoints": [
-    "static/css/main.6402ee3a.css",
-    "static/js/main.88b3924f.js"
+    "static/css/main.4b50c209.css",
+    "static/js/main.92287586.js"
   ]
 }
