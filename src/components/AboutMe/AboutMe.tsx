@@ -9,7 +9,11 @@ import ComplementaryCourses from './ComplementaryCourses.tsx';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import explosao from '../../assets/explosao.png';
+import primeira from '../../assets/Me/1.jpeg';
+import segunda from '../../assets/Me/2.jpeg';
+import terceira from '../../assets/Me/3.jpeg';
+import quarta from '../../assets/Me/4.jpeg';
+
 
 const AboutMe: React.FC = () => {
   const { t } = useTranslation();
@@ -49,13 +53,16 @@ const AboutMe: React.FC = () => {
           <div className="about-me-carousel">
             <Slider {...sliderSettings}>
               <div>
-                <img src={explosao} alt={t('aboutMe.images.profile1')} />
+                <img src={primeira} alt={t('aboutMe.images.profile1')} />
               </div>
               <div>
-                <img src={explosao} alt={t('aboutMe.images.profile2')} />
+                <img src={segunda} alt={t('aboutMe.images.profile2')} />
               </div>
               <div>
-                <img src={explosao} alt={t('aboutMe.images.profile3')} />
+                <img src={terceira} alt={t('aboutMe.images.profile3')} />
+              </div>
+              <div>
+                <img src={quarta} alt={t('aboutMe.images.profile4')} />
               </div>
             </Slider>
           </div>

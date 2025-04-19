@@ -19,7 +19,7 @@ export const pt = {
     },
     about: {
       title: 'Sobre Mim',
-      brief: 'Sou Gabriel Cobo, estudante de Ciência da Computação na UFABC e estagiário em desenvolvimento de agents na Fintalk SA. Apaixonado por IA, design e criação de jogos, estou sempre explorando novas tecnologias para transformar ideias em projetos incríveis. Clique em \'Saiba Mais\' e conheça meu trabalho!',
+      brief: 'Sou Gabriel Cobo, estudante de Ciência da Computação na UFABC e estagiário em desenvolvimento de agents na Fintalk SA. Apaixonado por IA, design e desenvolvimento, estou sempre explorando novas tecnologias para transformar ideias em projetos. Clique em \'Saiba Mais\' e me conheça melhor!',
       knowMore: 'Saiba Mais',
       devProjects: 'Projetos de Desenvolvimento',
       designProjects: 'Projetos de Design',
@@ -42,7 +42,9 @@ export const pt = {
       images: {
         profile1: 'Foto de perfil 1',
         profile2: 'Foto de perfil 2',
-        profile3: 'Foto de perfil 3'
+        profile3: 'Foto de perfil 3',
+        profile4: 'Foto de perfil 4'
+
       },
       complementaryCourses: {
         title: 'Certificados',
@@ -137,10 +139,10 @@ export const pt = {
     experiences: {
       fintalk: {
         title: "Fintalk",
-        subtitle: "Experiência de Estágio",
-        paragraph1: "Durante meu estágio na Fintalk, tive a oportunidade de trabalhar com soluções de tecnologia financeira de ponta. Meu papel envolvia testar e avaliar várias ferramentas e plataformas, semelhante a uma posição de Garantia de Qualidade, onde eu garantia a confiabilidade e o desempenho das soluções de software da empresa.",
-        paragraph2: "Desenvolvi uma forte abordagem analítica para dados, identificando padrões e insights que ajudaram a melhorar nossos serviços. Trabalhando em estreita colaboração com a equipe de desenvolvimento, contribuí para a otimização de fluxos de trabalho e o aprimoramento das experiências dos usuários.",
-        paragraph3: "Uma das minhas principais responsabilidades era implementar e testar fluxos de trabalho de automação, o que reduziu significativamente os processos manuais e melhorou a eficiência operacional. Também realizei análises completas de logs e métricas do sistema para identificar possíveis problemas antes que afetassem os usuários."
+        subtitle: "Estágio em Técnologia Conversacional",
+        paragraph1: "Na Fintalk, uma empresa voltada a soluções de IA, atuei diretamente no desenvolvimento de fluxos conversacionais para agents inteligentes. Utilizei JavaScript para estruturar diálogos dinâmicos e realizei integrações com diversas APIs, garantindo que os bots atendessem às necessidades específicas de cada cliente. Para orquestrar e automatizar esses fluxos, trabalhei com a plataforma n8n, o que permitiu criar soluções escaláveis e adaptáveis para diferentes cenários de atendimento.",
+        paragraph2: "Além do desenvolvimento, monitoro os agents utilizando o Datadog, acompanhando métricas, logs e alertas para garantir a estabilidade e a performance das soluções entregues. Essa atuação proativa foi fundamental para identificar e resolver possíveis gargalos ou falhas antes que impactassem os usuários finais. Também participei do atendimento a clientes, respondendo tickets de incidentes e colaborando para a resolução rápida de problemas, o que me proporcionou uma visão mais ampla do ciclo de vida dos produtos.",
+        paragraph3: "Minha experiência na Fintalk também envolveu uma abordagem analítica sobre os dados dos fluxos conversacionais, buscando padrões e oportunidades de melhoria contínua. Tive a oportunidade de testar softwares internos, atuando como quase um QA, o que ampliou minha compreensão sobre qualidade, usabilidade e confiabilidade das soluções. Essa vivência multidisciplinar me permitiu desenvolver habilidades técnicas e interpessoais essenciais para o ambiente de tecnologia conversacional."
       },
       etec: {
         title: "ETEC",
@@ -149,13 +151,13 @@ export const pt = {
         paragraph2: "Participei de vários projetos práticos que me permitiram aplicar conhecimentos teóricos a cenários do mundo real, desenvolvendo soluções individuais e em equipe. Essa experiência foi crucial para desenvolver minhas habilidades de resolução de problemas e proficiência técnica."
       },
       sciTech: {
-        title: "Ciência e Tecnologia",
+        title: "Bacharelado em Ciência e Tecnologia",
         subtitle: "Estudos Acadêmicos",
-        paragraph1: "Meus estudos em Ciência e Tecnologia me proporcionaram uma base sólida nas ciências fundamentais que sustentam a tecnologia moderna. O programa enfatizou o pensamento analítico e a resolução de problemas por meio de cursos rigorosos em várias disciplinas científicas.",
+        paragraph1: "O Bacharelado em Ciência e Tecnologia me proporcionou uma base sólida nas ciências fundamentais que sustentam a tecnologia moderna. enfatizando o pensamento analítico e a resolução de problemas por meio de cursos rigorosos em várias disciplinas científicas.",
         paragraph2: "Através de trabalhos de laboratório e estudos teóricos, desenvolvi uma compreensão mais profunda do mundo físico e dos princípios matemáticos que o descrevem. Essa abordagem interdisciplinar tem sido inestimável em meu trabalho técnico, permitindo-me abordar problemas de múltiplas perspectivas."
       },
       compSci: {
-        title: "Ciência da Computação",
+        title: "Bacharelado em Ciências da Computação",
         subtitle: "Estudos Acadêmicos",
         paragraph1: "Minha educação em Ciência da Computação me equipou com conhecimentos teóricos e habilidades práticas em desenvolvimento de software, algoritmos e estruturas de dados. O programa enfatizou a resolução de problemas e o pensamento computacional em vários domínios da ciência da computação.",
         paragraph2: "Adquiri experiência em princípios de programação orientada a objetos, gerenciamento de banco de dados e metodologias modernas de desenvolvimento de software. Além disso, explorei tecnologias emergentes como Modelos de Linguagem Grandes (LLMs), aprimorando minha capacidade de trabalhar com soluções baseadas em IA."
@@ -163,14 +165,14 @@ export const pt = {
       monitoriaExperience: {
         title: "Monitoria Inclusiva",
         subtitle: "UFABC (2023-2024)",
-        paragraph1: "Atuei como monitor inclusivo na UFABC, auxiliando estudantes com necessidades especiais em disciplinas de exatas.",
+        paragraph1: "Atuei como monitor inclusivo na UFABC, auxiliando estudantes com necessidades especiais em disciplinas específicas.",
         paragraph2: "Desenvolvi materiais adaptados e estratégias de ensino personalizadas para garantir a acessibilidade e o aprendizado efetivo."
       },
       ieeeExperience: {
         logoAlt: "Logo IEEE UFABC",
         title: "Designer IEEE",
         subtitle: "IEEE UFABC (2024-2025)",
-        paragraph1: "Atuo como designer no ramo estudantil do IEEE na UFABC, criando materiais visuais para eventos, workshops e mídias sociais.",
+        paragraph1: "Como designer no ramo estudantil do IEEE na UFABC, criei materiais visuais para eventos, workshops e mídias sociais.",
         paragraph2: "Desenvolvo identidades visuais para projetos técnicos e científicos, contribuindo para a divulgação de conhecimento em engenharia e tecnologia."
       },
       techTitles: {
@@ -273,15 +275,15 @@ export const pt = {
       },
       design: {
         title: 'Projetos de Design',
-        description: 'Criação de interfaces, logos e designs com atenção aos detalhes e princípios modernos de UI/UX',
+        description: 'Criação de posts, logos e designs com atenção aos detalhes e princípios de UI/UX',
         count: 'Designs',
         toolCount: 'Ferramentas'
       },
       seeProjects: 'Ver Projetos'
     },
     devProjects: {
-      title: 'Pagina em desenvolvimento...',
-      intro: 'Aqui estão alguns dos meus projetos de desenvolvimento mais recentes. Cada projeto representa uma oportunidade de aprendizado e crescimento em diferentes tecnologias e conceitos.',
+      title: 'Meus Projetos de desenvolvimento',
+      intro: 'Aqui estão alguns dos meus projetos de desenvolvimento mais recentes. Cada projeto é uma demonstração de minha habilidade em desenvolvimento web, mobile e desktop.',
       projects: {
         ufabcAgent: {
           title: 'Agente Inteligente UFABC',

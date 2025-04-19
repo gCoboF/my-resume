@@ -1,91 +1,56 @@
 .skills-container {
-  padding: 2rem 0;
+  padding: 3rem 0;
   margin: 6rem auto;
-  width: calc(100% - 4rem);
-  max-width: 1200px;
+  width: calc(100% - 6rem);
+  max-width: 1400px;
 }
-
-.skills-title {
-  font-size: 2.5rem;
-  text-align: center;
-  margin-bottom: 3rem;
-  background: linear-gradient(45deg, var(--primary-color), var(--accent-color));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-}
-
-.skills-icon {
-  font-size: 2rem;
-}
-
-/* Remove the old skills-heading style */
-/* .skills-heading {
-  text-align: center;
-  margin-bottom: 2rem;
-  color: #fff;
-  font-size: 2rem;
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-} */
 
 .skills-columns {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-}
-
-.skills-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0; /* Remove padding from columns */
+  width: 100%;
+  padding: 1rem;
 }
 
 .skill-card {
-  background-color: rgba(30, 30, 40, 0.7);
-  border-radius: 8px;
-  padding: 1rem;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  background: rgba(30, 30, 40, 0.7);
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  margin: 0.5rem;
+  margin-top: 1rem;
+  max-height: 150px;
+  cursor: default;
 }
 
 .skill-header {
   display: flex;
   align-items: center;
-  margin-bottom: 0.75rem;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .skill-icon {
-  font-size: 1.5rem;
-  margin-right: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 2rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .skill-name {
-  margin: 0;
-  color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-color);
 }
 
 .skill-context {
   color: #ccc;
-  font-size: 0.85rem;
-  line-height: 1.4;
-  margin: 0;
+  font-size: 0.95rem;
+  line-height: 1.6;
 }
 
 /* Skill-specific colors */
@@ -171,7 +136,7 @@
   }
 
   .skill-icon {
-    margin-right: 0;
+    margin-right: 0.5rem;
     margin-bottom: 0.5rem;
     font-size: 2rem;
   }

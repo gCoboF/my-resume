@@ -108,6 +108,29 @@ const Experiences = () => {
         { name: t('experiences.technologies.graphicDesign'), className: "graphic" },
         { name: t('experiences.technologies.visualCommunication'), className: "visual" }
       ]
+    },
+    {
+      id: "fintalk-experience",
+      logo: fintalkLogo,
+      logoAlt: "Fintalk Logo",
+      title: t('experiences.fintalk.title'),
+      subtitle: t('experiences.fintalk.subtitle'),
+      paragraphs: [
+        t('experiences.fintalk.paragraph1'),
+        t('experiences.fintalk.paragraph2'),
+        t('experiences.fintalk.paragraph3')
+      ],
+      techTitle: t('experiences.technologiesUsed'),
+      techs: [
+        { name: t('experiences.technologies.javascript'), className: "javascript" },
+        { name: t('experiences.technologies.n8n'), className: "n8n" },
+        { name: t('experiences.technologies.python'), className: "python" },
+        { name: t('experiences.technologies.datadog'), className: "datadog" },
+        { name: t('experiences.technologies.dataAnalysis'), className: "analysis" },
+        { name: t('experiences.technologies.logMonitoring'), className: "monitoring" },
+        { name: t('experiences.technologies.alertConfig'), className: "alerts" },
+        { name: t('experiences.technologies.api'), className: "api" }
+      ]
     }
 ];
 

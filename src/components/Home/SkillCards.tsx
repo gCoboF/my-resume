@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { FaPython, FaReact, FaDatabase} from 'react-icons/fa';
 import { SiTypescript } from 'react-icons/si';
 import { MdAutoFixHigh} from 'react-icons/md';
+import { SiAdobephotoshop, SiOpenai } from 'react-icons/si';
 
 
 const SkillCards: React.FC = () => {
@@ -24,14 +25,54 @@ const SkillCards: React.FC = () => {
   }, []);
 
   const skills = [
-    { name: 'TypeScript', description: 'Web Development', icon: <SiTypescript />, link: '#javascript' },
-    { name: 'React', description: 'Frontend Development', icon: <FaReact />, link: '#react' },
-    { name: 'n8n', description: 'Workflow Automation', icon: <MdAutoFixHigh />, link: '#n8n' },
-    { name: 'Photoshop', description: 'Digital Design', icon: '🎨', link: '#photoshop' },
-    { name: 'Python', description: 'AI & Data Science', icon: <FaPython />, link: '#python' },
-    { name: 'SQL', description: 'Database Management', icon: <FaDatabase />, link: '#sql' },
-    { name: 'Prompt Engineering', description: 'AI Interaction & LLMs', icon: '🤖', link: '#prompt' },
-    { name: t('skills.seeMore'), description: t('skills.seeMoreDesc'), icon: '+', link: '/skills' }
+    { 
+      name: 'TypeScript', 
+      description: 'Web Development', 
+      icon: <SiTypescript size={28} />, 
+      link: '#javascript' 
+    },
+    { 
+      name: 'React', 
+      description: 'Frontend Development', 
+      icon: <FaReact size={28} />, 
+      link: '#react' 
+    },
+    { 
+      name: 'n8n', 
+      description: 'Workflow Automation', 
+      icon: <MdAutoFixHigh size={28} />, 
+      link: '#n8n' 
+    },
+    { 
+      name: 'Photoshop', 
+      description: 'Digital Design', 
+      icon: <SiAdobephotoshop size={28} />, 
+      link: '#photoshop' 
+    },
+    { 
+      name: 'Python', 
+      description: 'AI & Data Science', 
+      icon: <FaPython size={28} />, 
+      link: '#python' 
+    },
+    { 
+      name: 'SQL', 
+      description: 'Database Management', 
+      icon: <FaDatabase size={28} />, 
+      link: '#sql' 
+    },
+    { 
+      name: 'Prompt Engineering', 
+      description: 'AI Interaction & LLMs', 
+      icon: <SiOpenai size={28} />, 
+      link: '#prompt' 
+    },
+    { 
+      name: t('skills.seeMore'), 
+      description: t('skills.seeMoreDesc'), 
+      icon: '+', 
+      link: '/skills' 
+    }
   ];
 
   const handleScroll = () => {
@@ -59,7 +100,7 @@ const SkillCards: React.FC = () => {
         {skills.map((skill, index) => (
           <div 
             key={index} 
-            className={`skill-card ${skill.name === t('skills.seeMore') ? 'see-more-card' : ''}`}
+            className={`card-skill ${skill.name === t('skills.seeMore') ? 'see-more-card' : ''}`}
             onClick={skill.name === t('skills.seeMore') ? handleSeeMore : undefined}
           >
             <div className="skill-content">

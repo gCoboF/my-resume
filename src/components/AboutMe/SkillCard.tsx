@@ -61,7 +61,6 @@ const SkillCard = () => {
     }
   ];
 
-  // Platform and tools skills
   const platformSkills = [
     { 
       name: t('experiences.technologies.html'), 

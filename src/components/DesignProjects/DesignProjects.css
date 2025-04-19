@@ -187,37 +187,7 @@
   margin-bottom: 15px;
 }
 
-.tech-tag {
-  padding: 4px 10px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 20px;
-  font-size: 0.8rem;
-  color: var(--text-color);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-}
 
-.project-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 6px 14px;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 8px;
-  color: #fff;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  margin: 5px;
-  font-size: 0.9rem;
-}
-
-.project-link:hover {
-  background: var(--gradient-design);
-  color: #fff;
-}
-
-/* Specific Section Styling */
-/* Pixel Art Section */
 .design-section:nth-of-type(5) .gallery-image {
   display: flex;
   align-items: center;
